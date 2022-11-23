@@ -1,0 +1,11 @@
+$body-bg: #FE564B;
+$primary: #FECC4B;
+
+$theme-colors: (
+  "primary": #FECC4B,
+  "secondary": #7E4E00,
+  "warning": #FE564B,
+  "dark": #C5433B
+);
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss'
