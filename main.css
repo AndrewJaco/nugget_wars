@@ -2,6 +2,7 @@ body{
   box-sizing: border-box;
   margin: 0;
   color: #FECC4B;
+  font-family: 'Poppins', sans-serif;
 }
 
 #mint-pass{
@@ -9,12 +10,29 @@ body{
   width: 100vw;
 }
 
+#breaking{
+  margin-bottom: 6rem;
+}
+
+.navlinks{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  margin: auto;
+  color: white !important;
+
+}
+
+a:active{
+  color: #ffffff;
+}
+
 .cust-btn{
   background-color: #FECC4B;
   color: #7E4E00;
   border: 9px solid #7E4E00;
   border-radius: 30px;
-  padding: 24px 45px;
+  padding: 15px 36px;
   font-size: 32px;
   font-weight: 900;
   line-height: 1;
@@ -27,4 +45,12 @@ body{
 
 .story-text{
   color: black;
+  font-family: 'Comic Neue', sans-serif;
+  font-weight: bold;
+}
+
+.about-card{
+  padding: 40px;
+  max-width: 566px;
+  border-radius: 30px;
 }
