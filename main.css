@@ -27,7 +27,7 @@ nav{
   background-image: url("img/bg_image3.png");
   background-repeat: no-repeat;
   background-color: var(--dark);
-  background-size: cover;
+  background-size:cover;
 }
 
 #breaking{
