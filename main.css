@@ -1,12 +1,67 @@
+:root{
+  --bg-color: #fe564b;
+  --dark: #c5433b;
+  --primary: #fecc4b;
+  --brown: #7E4E00;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}
+
 body{
   box-sizing: border-box;
   margin: 0;
-  color: #FECC4B;
+  color: var(--primary);
   font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+}
+
+nav{
+  background-color: var(--dark);
+}
+
+#mint-pass{
+  background-image: url("img/bg_image3.png");
+  background-repeat: no-repeat;
+  background-color: var(--dark);
+  background-size: contain;
 }
 
 #breaking{
   margin-bottom: 6rem;
+  background-image: url("img/bg_image2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#about{
+  background-image: url("img/bg_image3.png");
+  background-repeat: no-repeat;
+  background-color: var(--dark);
+  background-size: contain;
+  padding: 45px 0;
+}
+
+#gallery{
+  background-color: var(--dark);
+}
+
+#roadmap{
+  background-image: url("img/bg_image4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+}
+
+#team{
+  background-color: var(--dark);
+}
+
+footer{
+  background-color: var(--dark);
 }
 
 .navbar-brand>img{
@@ -18,20 +73,18 @@ body{
 .navlinks{
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
-  /* text-decoration: none;
-  margin: auto; */
   color: white !important;
-
+  
 }
 
 a:active{
-  color: #ffffff;
+  color: white;
 }
 
 .cust-btn{
-  background-color: #FECC4B;
-  color: #7E4E00;
-  border: 9px solid #7E4E00;
+  background-color: var(--primary);
+  color: var(--brown);
+  border: 9px solid var(--brown);
   border-radius: 30px;
   font-weight: 900;
   padding: 15px 36px;
@@ -39,23 +92,73 @@ a:active{
 }
 
 .main-text{
-  /* font-size: 48px; */
   font-weight: 900;
-
+  -webkit-text-stroke: 5px var(--dark);
 }
 
 .story-text{
   color: black;
-  font-family: 'Comic Neue', sans-serif;
   font-weight: bold;
   line-height: 1.4;
 }
 
-.about-card{
+.story-card{
   padding: 40px;
   max-width: 566px;
   border-radius: 30px;
   margin: auto;
+}
+
+.comic-neue{
+  font-family: 'Comic Neue', sans-serif;
+}
+
+.bold{
+  font-weight: 500;
+}
+
+.list-letters{
+  list-style-type: lower-alpha;
+}
+
+.card-title-cust{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--bg-color);
+  padding-bottom: 20px;
+}
+
+.flex-container{
+  max-width: 1000px;
+  gap: 24px;
+  margin: auto;
+}
+
+.roadmap-card{
+  max-width: 575px;
+  padding: 34px 24px;
+  border-radius: 30px;
+}
+
+.team-card{
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+
+}
+
+.team-names{
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.team-container{
+  max-width: 233px;
+  
 }
 
 @media screen and (max-width: 1000px) {
@@ -66,6 +169,18 @@ a:active{
   .cust-btn{
     padding: 12px 25px;
   }
+
+  .main-text{
+    -webkit-text-stroke: 3px var(--dark);
+  }
+
+  .story-text{
+    font-size: 16px !important;
+  }
+  
+  .card-title-cust{
+    font-size: 18px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -75,5 +190,31 @@ a:active{
 
   body{
     scrollbar-width: none;
+  }
+
+  .main-text{
+    -webkit-text-stroke: 2px var(--dark);
+  }
+
+  .story-card{
+    padding: 30px;
+  }
+
+  .story-text{
+    font-size: 14px !important;
+  }
+
+  .card-title-cust{
+    font-size: 16px;
+  }
+
+  #roadmap{
+    background-image: url('img/bg_image4_sm.png');
+  }  
+
+  .flex-boxes{
+    max-width: 95vw;
+    padding: 14px 4px;
+    margin: auto;
   }
 }
