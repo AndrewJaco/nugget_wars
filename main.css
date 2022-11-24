@@ -169,6 +169,19 @@ a:active{
   
 }
 
+@media screen and (min-width: 1440px) {
+  #mint-pass{
+    background-image: url(img/bg_image3_big_screen.png);
+    background-size: contain;
+  }
+
+  #about{
+    background-image: url(img/bg_image3_big_screen.png);
+    background-size: contain;
+  }
+  
+}
+
 @media screen and (max-width: 1000px) {
   .about-card{
     padding: 24px;
