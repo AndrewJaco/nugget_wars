@@ -13,7 +13,6 @@
 
 body{
   box-sizing: border-box;
-  margin: 0;
   color: var(--primary);
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
@@ -44,7 +43,7 @@ nav{
   background-color: var(--dark);
   background-size: contain;
   background-position: center center;
-  padding: 45px 0;
+  padding: 100px 0;
 }
 
 #gallery{
@@ -61,10 +60,12 @@ nav{
 
 #team{
   background-color: var(--dark);
+  padding: 80px 0;
 }
 
 footer{
   background-color: var(--dark);
+  padding: 45px 80px 200px;
 }
 
 .navbar-brand>img{
@@ -172,7 +173,7 @@ a:active{
 }
 
 .team-container{
-  max-width: 233px;
+  max-width: fit-content;
   
 }
 
@@ -221,6 +222,10 @@ a:active{
   
   .card-title-cust{
     font-size: 18px !important;
+  }
+
+  footer{
+    padding: 45px 35px 200px;
   }
 }
 
