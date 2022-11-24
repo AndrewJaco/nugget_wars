@@ -27,7 +27,7 @@ nav{
   background-image: url("img/bg_image3.png");
   background-repeat: no-repeat;
   background-color: var(--dark);
-  background-size: contain;
+  background-size: cover;
 }
 
 #breaking{
@@ -93,7 +93,15 @@ a:active{
 
 .main-text{
   font-weight: 900;
-  -webkit-text-stroke: 5px var(--dark);
+  text-shadow:
+    -5px -5px 0 var(--dark),
+     0   -5px 0 var(--dark),
+     5px -5px 0 var(--dark),
+     5px  0   0 var(--dark),
+     5px  5px 0 var(--dark),
+     0    5px 0 var(--dark),
+    -5px  5px 0 var(--dark),
+    -5px  0   0 var(--dark);
 }
 
 .story-text{
@@ -171,7 +179,15 @@ a:active{
   }
 
   .main-text{
-    -webkit-text-stroke: 3px var(--dark);
+    text-shadow:
+    -3px -3px 0 var(--dark),
+     0   -3px 0 var(--dark),
+     3px -3px 0 var(--dark),
+     3px  0   0 var(--dark),
+     3px  3px 0 var(--dark),
+     0    3px 0 var(--dark),
+    -3px  3px 0 var(--dark),
+    -3px  0   0 var(--dark);
   }
 
   .story-text{
@@ -193,7 +209,15 @@ a:active{
   }
 
   .main-text{
-    -webkit-text-stroke: 2px var(--dark);
+    text-shadow:
+    -2px -2px 0 var(--dark),
+     0   -2px 0 var(--dark),
+     2px -2px 0 var(--dark),
+     2px  0   0 var(--dark),
+     2px  2px 0 var(--dark),
+     0    2px 0 var(--dark),
+    -2px  2px 0 var(--dark),
+    -2px  0   0 var(--dark);
   }
 
   .story-card{
