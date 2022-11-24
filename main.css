@@ -27,7 +27,8 @@ nav{
   background-image: url("img/bg_image3.png");
   background-repeat: no-repeat;
   background-color: var(--dark);
-  background-size:cover;
+  background-size: cover;
+  background-position: center center;
 }
 
 #breaking{
@@ -42,6 +43,7 @@ nav{
   background-repeat: no-repeat;
   background-color: var(--dark);
   background-size: contain;
+  background-position: center center;
   padding: 45px 0;
 }
 
@@ -54,6 +56,7 @@ nav{
   background-repeat: no-repeat;
   background-size: contain;
   width: 100vw;
+  margin: 92px 0 70px;
 }
 
 #team{
@@ -79,6 +82,10 @@ footer{
 
 a:active{
   color: white;
+}
+
+.hero-img-div{
+  max-width: 700px;
 }
 
 .cust-btn{
@@ -169,16 +176,21 @@ a:active{
   
 }
 
-@media screen and (min-width: 1440px) {
-  #mint-pass{
+@media screen and (min-width: 1380px) {
+  #about{
+    /* background-image: url(img/bg_image3_big_screen.png); */
+    background-size: cover;
+  }
+
+  /* #mint-pass{
     background-image: url(img/bg_image3_big_screen.png);
     background-size: contain;
   }
 
-  #about{
-    background-image: url(img/bg_image3_big_screen.png);
-    background-size: contain;
-  }
+
+  #roadmap{
+    background-size: cover;
+  } */
   
 }
 
