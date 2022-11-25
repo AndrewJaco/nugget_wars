@@ -2,7 +2,8 @@
   --bg-color: #fe564b;
   --dark: #c5433b;
   --primary: #fecc4b;
-  --brown: #7E4E00;
+  --brown: #7e4e00;
+  --brown-300: rgb(126, 78, 0, .9);
 }
 
 *{
@@ -78,11 +79,6 @@ footer{
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   color: white !important;
-  
-}
-
-a:active{
-  color: white;
 }
 
 .hero-img-div{
@@ -94,9 +90,18 @@ a:active{
   color: var(--brown);
   border: 9px solid var(--brown);
   border-radius: 30px;
+  font-size: calc(1rem + .8vw);
   font-weight: 900;
   padding: 15px 36px;
-  
+}
+
+.cust-btn:hover{
+  color:var(--brown-300);
+  border-color: var(--brown-300);
+}
+
+.brown-close-btn{
+  filter: invert(19%) sepia(63%) saturate(4491%) hue-rotate(48deg) brightness(98%) contrast(104%);
 }
 
 .main-text{
@@ -151,6 +156,19 @@ a:active{
   margin: auto;
 }
 
+.cust-modal-card{
+  color: black;
+  background-color: var(--primary);
+  border-radius: 30px;
+}
+
+.cust-modal-title{
+  color: var(--brown);
+  font-weight: 900;
+}
+
+
+
 .roadmap-card{
   max-width: 575px;
   padding: 34px 24px;
@@ -164,7 +182,6 @@ a:active{
   font-size: 14px;
   text-align: center;
   font-weight: 500;
-
 }
 
 .team-names{
@@ -175,6 +192,22 @@ a:active{
 .team-container{
   max-width: fit-content;
   
+}
+
+.quantity-input{
+  border: 1px solid rgba( 0, 0, 0, 1);
+  font-size: 20px;
+  font-family: 'Comic Neue', sans-serif;
+}
+
+.pass-form-text{
+  color: black;
+  font-size: 20px;
+  font-family: 'Comic Neue', sans-serif;
+}
+
+.responsive-width{
+  width: 75%;
 }
 
 @media screen and (min-width: 1380px) {
@@ -195,13 +228,14 @@ a:active{
   
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   .about-card{
     padding: 24px;
   }
 
   .cust-btn{
-    padding: 12px 25px;
+    padding: 8px 12px;
+    border: 6px solid var(--brown);
   }
 
   .main-text{
@@ -222,6 +256,10 @@ a:active{
   
   .card-title-cust{
     font-size: 18px !important;
+  }
+
+  .responsive-width{
+    width: 100%;
   }
 
   footer{
@@ -248,6 +286,11 @@ a:active{
      0    2px 0 var(--dark),
     -2px  2px 0 var(--dark),
     -2px  0   0 var(--dark);
+  }
+
+  .cust-btn{
+    border: 4px solid var(--brown);
+    padding: 4px 10px;
   }
 
   .story-card{
