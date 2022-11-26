@@ -60,7 +60,7 @@ nav{
 
 #roadmap{
   background-image: url("img/oil3.png");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
