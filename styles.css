@@ -24,27 +24,34 @@ nav{
 }
 
 #mint-pass{
-  background-image: url("img/bg_image3.png");
+  background-image: url("img/oil1.png");
   background-repeat: no-repeat;
   background-color: var(--dark);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: center center;
 }
 
 #breaking{
   margin-bottom: 6rem;
-  background-image: url("img/bg_image2.png");
+  background-image: url("img/oil2.png");
   background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
   background-size: contain;
 }
 
 #about{
-  background: url("img/bg_image3.png");
-  background-repeat: no-repeat;
   background-color: var(--dark);
-  background-size: contain;
-  background-position: center center;
   padding: 100px 0;
+  background: url("img/oil1.png") no-repeat center center; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
 #gallery{
@@ -52,10 +59,13 @@ nav{
 }
 
 #roadmap{
-  background-image: url("img/bg_image4.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-image: url("img/oil3.png");
+  background-repeat: repeat-y;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  /* background-position: center center; */
   margin: 92px 0 70px;
 }
 
@@ -106,6 +116,9 @@ footer{
 
 .main-text{
   font-weight: 900;
+}
+
+.text-shadow{
   text-shadow:
     -5px -5px 0 var(--dark),
      0   -5px 0 var(--dark),
@@ -167,12 +180,17 @@ footer{
   font-weight: 900;
 }
 
-
-
 .roadmap-card{
   max-width: 575px;
   padding: 34px 24px;
   border-radius: 30px;
+}
+
+.roadmap-card-text{
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
 .team-card{
@@ -210,7 +228,7 @@ footer{
   width: 75%;
 }
 
-@media screen and (min-width: 1380px) {
+@media screen and (min-width: 2000px) {
   #about{
     /* background-image: url(img/bg_image3_big_screen.png); */
     background-size: cover;
@@ -229,6 +247,10 @@ footer{
 }
 
 @media screen and (max-width: 992px) {
+  #mint-pass{
+    background-image: url("img/oil1_small.png");
+  } 
+  
   .about-card{
     padding: 24px;
   }
@@ -258,8 +280,16 @@ footer{
     font-size: 18px !important;
   }
 
+  .roadmap-card{
+    padding: 4px 24px;
+  }
+
   .responsive-width{
     width: 100%;
+  }
+
+  .pass-card-img{
+    width: 96px;
   }
 
   footer{
@@ -303,15 +333,20 @@ footer{
 
   .card-title-cust{
     font-size: 16px;
-  }
-
-  #roadmap{
-    background-image: url('img/bg_image4_sm.png');
-  }  
+  } 
 
   .flex-boxes{
     max-width: 95vw;
     padding: 14px 4px;
     margin: auto;
+  }
+
+  .pass-card-img{
+    width: 64px;
+  }
+
+  .coming-soon-img{
+    width: 128px;
+    
   }
 }

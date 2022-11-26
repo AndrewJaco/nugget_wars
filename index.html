@@ -17,20 +17,22 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark px-3">
-      <div class="container-fluid">
+      <div class="pe-0 container-fluid">
         <a class="navbar-brand" href="/">
           <img  src="img/logo.svg" alt="logo" >
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse container-fluid justify-content-end" id="navbarNav">
-          <ul class="navbar-nav align-items-center">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center me-lg-3 me-0 mb-3 mb-lg-3">
             <li class="nav-item "><a class="nav-link navlinks" href="#about">ABOUT</a></li>
             <li class="nav-item "><a class="nav-link navlinks" href="#gallery">GALLERY</a></li>
             <li class="nav-item "><a class="nav-link navlinks" href="#roadmap">ROADMAP</a></li>
             <li class="nav-item "><a class="nav-link navlinks" data-bs-toggle="modal" data-bs-target="#unmint-modal">UNMINT</a></li>
-            <li class="nav-item me-3"><a class="nav-link navlinks" data-bs-toggle="modal" data-bs-target="#gamefi-modal" >GAMEFI</a></li>
+            <li class="nav-item"><a class="nav-link navlinks" data-bs-toggle="modal" data-bs-target="#gamefi-modal">GAMEFI</a></li>
+          </ul>
+          <ul class="navbar-nav align-items-center">
             <li class="nav-item"><a class="nav-link" href="/"> <img src="img/icons/twitter.svg" alt="twitter link"></a></li>
             <li class="nav-item"><a class="nav-link" href="/"><img src="img/icons/discord.svg" alt="discord link"></a></li>
             <li class="nav-item"><a class="nav-link" href="https://opensea.io/"><img src="img/icons/opensea.svg" alt="OpenSea"></a></li>
@@ -46,7 +48,7 @@
             <img src="img/dream.png" alt="hero image" class="img-fluid">
           </div>
           <div class="col-12 col-lg-5 mb-4">
-            <h1 class="text-uppercase main-text text-center text-lg-start display-5 mb-4">First,<br> you will need the pass!</h1>
+            <h1 class="text-uppercase main-text text-center text-lg-start display-5 mb-4 text-shadow">First,<br> you will need the pass!</h1>
             <div class="mt-3 mt-lg-5 d-flex d-lg-block justify-content-center">
               <button class="text-uppercase cust-btn h2 btn-lg text-center text-lg-start" data-bs-toggle="modal" data-bs-target="#mint-pass-modal">Mint Pass</button>
             </div>
@@ -54,7 +56,6 @@
         </div>
       </div>
     </section>
-    
     <section id="hero" class="container-fluid pt-3 pt-lg-5">
       <div class="d-flex flex-column align-items-center gap-5" >
         <div class="hero-img-div">
@@ -64,7 +65,6 @@
         <img src="img/hero2.png" alt="Battle of the nuggets" class="img-fluid">
       </div>
     </section>
-    
     <section id="breaking" class="mt-5 px-0">
       <div class="container">
         <div class="row align-items-center ">
@@ -195,7 +195,7 @@
           <div class="card align-self-start roadmap-card align-self-start">
             <div class="card-body">
               <p class="card-title card-title-cust">Phase 1 (Nov 2022)</p>
-              <ol class="card-text comic-neue fs-5 bold story-text">
+              <ol class="card-text comic-neue bold roadmap-card-text">
                 <li class="">
                   Community Building
                   <ol>
@@ -217,7 +217,7 @@
             <div class="card-body">
               <p class="card-title card-title-cust">Phase 2 (Dec 2022)
               </p>
-              <ol class="card-text comic-neue fs-5 bold story-text">
+              <ol class="card-text comic-neue roadmap-card-text">
                 <li>
                   Mint-pass sale & Collection Reveal
                 </li>
@@ -233,7 +233,7 @@
           <div class="card roadmap-card align-self-start">
             <div class="card-body">
               <p class="card-title card-title-cust">Phase 3 (Jan 2023)</p>
-              <ol class="card-text comic-neue fs-5 bold story-text">
+              <ol class="card-text comic-neue roadmap-card-text">
                 <li>
                   Event organization: Concert and music festival project launch.
                 </li>
@@ -247,7 +247,7 @@
             <div class="card-body">
               <p class="card-title card-title-cust">Phase 4 (Q1 2023)
               </p>
-              <ol class="card-text comic-neue fs-5 bold story-text">
+              <ol class="card-text comic-neue roadmap-card-text">
                 <li>
                   Nugget Wars Fastfood Shop: It will be the place of relaxation par excellence, any holder of Nuggets will have the right to privileges in this fabulous place. 
                 </li>
@@ -261,7 +261,7 @@
             <div class="card-body">
               <p class="card-title card-title-cust">Phase 5 (Q2 2023)
               </p>
-              <ol class="card-text comic-neue fs-5 bold story-text">
+              <ol class="card-text comic-neue roadmap-card-text">
                 <li>
                   NuggetWars Game: Game-Fi system based on the NFT collection will be published.
                 </li>
@@ -383,10 +383,10 @@
             </div>
             <div class="container responsive-width">
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <img src="img/pass.png" alt="a mint pass" class="img-fluid">
                 </div>
-                <div class="col-6 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
                   <form>
                     <div class="mb-3">
                       <div class="d-flex justify-content-center gap-3">
@@ -409,65 +409,122 @@
     </div>
 
     <!-- Modal for Minting a Nugget -->
-    <div class="modal fade" id="select-pass-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-xl ">
-        <div class="modal-content cust-modal-card">
-          <div class="modal-header pt-3 pe-3 pt-lg-5 pe-lg-5 pb-0 border-0 ">
-            <button type="button" class="btn-close brown-close-btn fs-3" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body pt-0">
-            <div class="mb-0 mb-lg-5">
+    <div class="modal fade " id="select-pass-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl ">
+        <form class="modal-content cust-modal-card">
+          <div class="d-flex flex-column border-0 ">
+            <div class="align-self-end pt-3 pe-3 pt-lg-5 pe-lg-5 pb-0">
+              <button type="button" class="btn-close brown-close-btn fs-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="justify-self-center px-3 my-0 mb-0 mb-lg-2">
               <h2 class="cust-modal-title text-uppercase text-center">SELECT A  PASS & MINT A NUGGETS!</h2>
             </div>
-              <form class="container my-3 my-lg-5 ">
-                <div class="row justify-content-around">
-                  <div class="col-2 card p-2">
-                    <img src="img/mint_pass 1.png" class="card-img-top" alt="mint pass 1">
-                    <div class="card-body text-center">
-                      <label class="card-title form-check-label " for="pass1">NW PASS #01823</label>
-                      <input type="checkbox" class="form-check-input" id="pass1">
-                    </div>
-                  </div>
-                  <div class="col-2 card p-2">
-                    <img src="img/mint_pass 1.png" class="card-img-top" alt="mint pass 1">
-                    <div class="card-body text-center">
-                      <label class="card-title form-check-label " for="pass2">NW PASS #01823</label>
-                      <input type="checkbox" class="form-check-input" id="pass2">
-                    </div>
-                  </div>
-                  <div class="col-2 card p-2">
-                    <img src="img/mint_pass 1.png" class="card-img-top" alt="mint pass 1">
-                    <div class="card-body text-center">
-                      <label class="card-title form-check-label " for="pass3">NW PASS #01823</label>
-                      <input type="checkbox" class="form-check-input" id="pass3">
-                    </div>
-                  </div>
-                  <div class="col-2 card p-2">
-                    <img src="img/mint_pass 1.png" class="card-img-top" alt="mint pass 1">
-                    <div class="card-body text-center">
-                      <label class="card-title form-check-label " for="pass4">NW PASS #01823</label>
-                      <input type="checkbox" class="form-check-input" id="pass4">
-                    </div>
-                  </div>
-                  <div class="col-2 card p-2">
-                    <img src="img/mint_pass 1.png" class="card-img-top" alt="mint pass 1">
-                    <div class="card-body text-center">
-                      <label class="card-title form-check-label " for="pass5">NW PASS #01823</label>
-                      <input type="checkbox" class="form-check-input" id="pass5">
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex flex-column align-items-center pt-3 pt-md-5">
-                  <p class="pass-form-text text-uppercase mb-0">3 Passes Selected</p>
-                  <p class="pass-form-text my-3 mb-3 ">Cost: 0.2 ETH</p>
-                  <div>
-                    <button class="btn cust-btn h2 text-uppercase" type="submit" data-bs-dismiss="modal"
-                    aria-label="Submit">Mint Now</button>
-                  </div>
-                </div>
-              </form>
           </div>
-        </div>
+          <div class="modal-body pt-0 px-5 ">
+              <div class="container my-3 my-lg-5 ">
+                <div class="row gap-lg-3 gap-2 ">
+                  <div class="col-12 col-lg-2 card p-2">
+                    <div class="d-flex flex-lg-column align-items-center">
+                      <div>
+                        <img src="img/mint_pass 1.png" class="card-img-top img-fluid pass-card-img" alt="mint pass 1">
+                      </div>
+                      <div class="card-body text-center pb-0 p-2">
+                        <label class="card-title form-check-label " for="pass1">NW PASS #01823</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" class="form-check-input m-2" id="pass1">
+                      </div>
+                    </div>
+                  </div><div class="col-12 col-lg-2 card p-2">
+                    <div class="d-flex flex-lg-column align-items-center">
+                      <div>
+                        <img src="img/mint_pass 1.png" class="card-img-top img-fluid pass-card-img" alt="mint pass 1">
+                      </div>
+                      <div class="card-body text-center pb-0 p-2">
+                        <label class="card-title form-check-label " for="pass1">NW PASS #01823</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" class="form-check-input m-2" id="pass1">
+                      </div>
+                    </div>
+                  </div><div class="col-12 col-lg-2 card p-2">
+                    <div class="d-flex flex-lg-column align-items-center">
+                      <div>
+                        <img src="img/mint_pass 1.png" class="card-img-top img-fluid pass-card-img" alt="mint pass 1">
+                      </div>
+                      <div class="card-body text-center pb-0 p-2">
+                        <label class="card-title form-check-label " for="pass1">NW PASS #01823</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" class="form-check-input m-2" id="pass1">
+                      </div>
+                    </div>
+                  </div><div class="col-12 col-lg-2 card p-2">
+                    <div class="d-flex flex-lg-column align-items-center">
+                      <div>
+                        <img src="img/mint_pass 1.png" class="card-img-top img-fluid pass-card-img" alt="mint pass 1">
+                      </div>
+                      <div class="card-body text-center pb-0 p-2">
+                        <label class="card-title form-check-label " for="pass1">NW PASS #01823</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" class="form-check-input m-2" id="pass1">
+                      </div>
+                    </div>
+                  </div><div class="col-12 col-lg-2 card p-2">
+                    <div class="d-flex flex-lg-column align-items-center">
+                      <div>
+                        <img src="img/mint_pass 1.png" class="card-img-top img-fluid pass-card-img" alt="mint pass 1">
+                      </div>
+                      <div class="card-body text-center pb-0 p-2">
+                        <label class="card-title form-check-label " for="pass1">NW PASS #01823</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" class="form-check-input m-2" id="pass1">
+                      </div>
+                    </div>
+                  </div><div class="col-12 col-lg-2 card p-2">
+                    <div class="d-flex flex-lg-column align-items-center">
+                      <div>
+                        <img src="img/mint_pass 1.png" class="card-img-top img-fluid pass-card-img" alt="mint pass 1">
+                      </div>
+                      <div class="card-body text-center pb-0 p-2">
+                        <label class="card-title form-check-label " for="pass1">NW PASS #01823</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" class="form-check-input m-2" id="pass1">
+                      </div>
+                    </div>
+                  </div><div class="col-12 col-lg-2 card p-2">
+                    <div class="d-flex flex-lg-column align-items-center">
+                      <div>
+                        <img src="img/mint_pass 1.png" class="card-img-top img-fluid pass-card-img" alt="mint pass 1">
+                      </div>
+                      <div class="card-body text-center pb-0 p-2">
+                        <label class="card-title form-check-label " for="pass1">NW PASS #01823</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" class="form-check-input m-2" id="pass1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+          <div class="modal-footer border-0 d-flex flex-column align-items-center pt-3 pt-lg-5">
+            <p class="pass-form-text text-uppercase mb-0">3 Passes Selected</p>
+            <p class="pass-form-text my-3 mb-3 ">Cost: 0.2 ETH</p>
+            <div>
+              <button class="btn cust-btn h2 text-uppercase" type="submit" data-bs-dismiss="modal"
+              aria-label="Submit">Mint Now</button>
+            </div>
+            <div>
+              <button class="btn cust-btn h2 text-uppercase border-0" type="button" data-bs-target="#mint-pass-modal" data-bs-toggle="modal" data-bs-dismiss="modal"
+              aria-label="mint pass">Get More Passes</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -478,11 +535,11 @@
           <div class="modal-header pt-3 pe-3 pt-lg-5 pe-lg-5 pb-0 border-0">
             <button type="button" class="btn-close brown-close-btn fs-3" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body pt-0">
+          <div class="modal-body pt-0 pb-5">
             <div class="container mt-5 responsive-width">
               <div>
                 <div class="text-center">
-                  <img src="img/cook.png" alt="Fry weilding nugget" class="img-fluid" width="267">
+                  <img src="img/cook.png" alt="Fry weilding nugget" class="img-fluid coming-soon-img" width="267">
                 </div>
                 <h2 class="cust-modal-title text-uppercase text-center my-3 my-lg-5">Unmint Feature is Coming Soon...</h2>
               </div>
@@ -499,17 +556,17 @@
           <div class="modal-header pt-3 pe-3 pt-lg-5 pe-lg-5 pb-0 border-0">
             <button type="button" class="btn-close brown-close-btn fs-3" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body pt-0">
+          <div class="modal-body pt-0 pb-5">
             <div class="container mt-5 responsive-width">
               <div>
                 <div class="text-center ">
                   <div class="d-flex align-items-center justify-content-around gap-2">
                     <div>
-                      <img src="img/ninja.png" alt="Ninja Nugget" class="img-fluid" width="267">
+                      <img src="img/ninja.png" alt="Ninja Nugget" class="img-fluid coming-soon-img" width="267">
                     </div>
                     <h2 class="cust-modal-title text-uppercase text-center my-3 my-lg-5">vs</h2>
                     <div>
-                      <img src="img/captain.png" alt="Captain Nugget" class="img-fluid" width="267">
+                      <img src="img/captain.png" alt="Captain Nugget" class="img-fluid coming-soon-img" width="267">
                     </div>
                   </div>
                 </div>
