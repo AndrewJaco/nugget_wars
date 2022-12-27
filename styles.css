@@ -2,7 +2,8 @@
   --bg-color: #fe564b;
   --dark: #c5433b;
   --primary: #fecc4b;
-  --brown: #7E4E00;
+  --brown: #7e4e00;
+  --brown-300: rgb(126, 78, 0, .9);
 }
 
 *{
@@ -13,7 +14,6 @@
 
 body{
   box-sizing: border-box;
-  margin: 0;
   color: var(--primary);
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
@@ -24,27 +24,34 @@ nav{
 }
 
 #mint-pass{
-  background-image: url("img/bg_image3.png");
+  background-image: url("img/oil1.png");
   background-repeat: no-repeat;
   background-color: var(--dark);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: center center;
 }
 
 #breaking{
   margin-bottom: 6rem;
-  background-image: url("img/bg_image2.png");
+  background-image: url("img/oil2.png");
   background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
   background-size: contain;
 }
 
 #about{
-  background-image: url("img/bg_image3.png");
-  background-repeat: no-repeat;
   background-color: var(--dark);
+  padding: 100px 0;
+  background: url("img/oil1.png") no-repeat center center; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
   background-size: contain;
-  background-position: center center;
-  padding: 45px 0;
 }
 
 #gallery{
@@ -52,19 +59,24 @@ nav{
 }
 
 #roadmap{
-  background-image: url("img/bg_image4.png");
+  background-image: url("img/oil3.png");
   background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
   background-size: contain;
-  width: 100vw;
+  /* background-position: center center; */
   margin: 92px 0 70px;
 }
 
 #team{
   background-color: var(--dark);
+  padding: 80px 0;
 }
 
 footer{
   background-color: var(--dark);
+  padding: 45px 80px 200px;
 }
 
 .navbar-brand>img{
@@ -77,11 +89,6 @@ footer{
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   color: white !important;
-  
-}
-
-a:active{
-  color: white;
 }
 
 .hero-img-div{
@@ -93,13 +100,25 @@ a:active{
   color: var(--brown);
   border: 9px solid var(--brown);
   border-radius: 30px;
+  font-size: calc(1rem + .8vw);
   font-weight: 900;
   padding: 15px 36px;
-  
+}
+
+.cust-btn:hover{
+  color:var(--brown-300);
+  border-color: var(--brown-300);
+}
+
+.brown-close-btn{
+  filter: invert(19%) sepia(63%) saturate(4491%) hue-rotate(48deg) brightness(98%) contrast(104%);
 }
 
 .main-text{
   font-weight: 900;
+}
+
+.text-shadow{
   text-shadow:
     -5px -5px 0 var(--dark),
      0   -5px 0 var(--dark),
@@ -150,10 +169,28 @@ a:active{
   margin: auto;
 }
 
+.cust-modal-card{
+  color: black;
+  background-color: var(--primary);
+  border-radius: 30px;
+}
+
+.cust-modal-title{
+  color: var(--brown);
+  font-weight: 900;
+}
+
 .roadmap-card{
   max-width: 575px;
   padding: 34px 24px;
   border-radius: 30px;
+}
+
+.roadmap-card-text{
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
 .team-card{
@@ -163,7 +200,6 @@ a:active{
   font-size: 14px;
   text-align: center;
   font-weight: 500;
-
 }
 
 .team-names{
@@ -172,11 +208,27 @@ a:active{
 }
 
 .team-container{
-  max-width: 233px;
+  max-width: fit-content;
   
 }
 
-@media screen and (min-width: 1380px) {
+.quantity-input{
+  border: 1px solid rgba( 0, 0, 0, 1);
+  font-size: 20px;
+  font-family: 'Comic Neue', sans-serif;
+}
+
+.pass-form-text{
+  color: black;
+  font-size: 20px;
+  font-family: 'Comic Neue', sans-serif;
+}
+
+.responsive-width{
+  width: 75%;
+}
+
+@media screen and (min-width: 2000px) {
   #about{
     /* background-image: url(img/bg_image3_big_screen.png); */
     background-size: cover;
@@ -194,13 +246,18 @@ a:active{
   
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
+  #mint-pass{
+    background-image: url("img/oil1_small.png");
+  } 
+  
   .about-card{
     padding: 24px;
   }
 
   .cust-btn{
-    padding: 12px 25px;
+    padding: 8px 12px;
+    border: 6px solid var(--brown);
   }
 
   .main-text{
@@ -221,6 +278,22 @@ a:active{
   
   .card-title-cust{
     font-size: 18px !important;
+  }
+
+  .roadmap-card{
+    padding: 4px 24px;
+  }
+
+  .responsive-width{
+    width: 100%;
+  }
+
+  .pass-card-img{
+    width: 96px;
+  }
+
+  footer{
+    padding: 45px 35px 200px;
   }
 }
 
@@ -245,6 +318,11 @@ a:active{
     -2px  0   0 var(--dark);
   }
 
+  .cust-btn{
+    border: 4px solid var(--brown);
+    padding: 4px 10px;
+  }
+
   .story-card{
     padding: 30px;
   }
@@ -255,15 +333,23 @@ a:active{
 
   .card-title-cust{
     font-size: 16px;
-  }
-
-  #roadmap{
-    background-image: url('img/bg_image4_sm.png');
-  }  
+  } 
 
   .flex-boxes{
     max-width: 95vw;
     padding: 14px 4px;
     margin: auto;
+  }
+
+  .pass-card-img{
+    width: 64px;
+  }
+
+  .coming-soon-img{
+    width: 128px;
+  }
+
+  footer{
+    overflow: hidden;
   }
 }
